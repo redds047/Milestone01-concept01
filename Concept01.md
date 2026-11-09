@@ -1,7 +1,7 @@
 # Weather and the Way NYC Rides: Project Proposal
 
 ## The concept
-**Looking at how weather changes the way people commute in New Yor, with a focus on citi bikes, it predicts people's choice of using citi bike dependent on the next day's weather prediction**
+**Looking at how weather changes the way people commute in New York, with a focus on citi bikes, it predicts people's choice of using citi bike dependent on the next day's weather prediction**
 
 This project joins Citi Bike trip records with daily Central Park weather to predict people's bike usage, then designs a Citi Bike app feature from the results.
 
@@ -21,12 +21,6 @@ Two public datasets for 2024–2025, joined by date.
 
 [Citi Bike trip histories](https://citibikenyc.com/system-data), one ride, about 45 million rides a year 
 [NOAA daily weather (GHCN-Daily)](https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily), Central Park station USW00094728, one day, about 730 rows 
-
-**Citi Bike variables:** 
-`started_at` (when the ride began), `rideable_type` (e-bike or classic), `member_casual` (rider type), and the start station's name and location.
-
-**Weather dependent variables:**
-`TMAX` / `TMIN` (high and low temperature, °F), `PRCP` (rain, inches), `SNOW` (inches) and `AWND` (wind, mph).
 
 **Key decision variables:** the full trip history is about 320 million rows ([Raschke, 2026](https://kurtraschke.com/2026/07/citibike-extractor)), too big for Colab, so I'll load one month at a time, keep only daily ride counts, and discard the raw rows.
 
