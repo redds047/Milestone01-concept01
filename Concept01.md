@@ -1,4 +1,4 @@
-## Weather and the Way NYC Rides: Project Proposal
+# Weather and the Way NYC Rides: Project Proposal
 
 ## The concept
 **Looking at how weather changes the way people commute in New Yor, with a focus on citi bikes, it predicts people's choice of using citi bike dependent on the next day's weather prediction**
